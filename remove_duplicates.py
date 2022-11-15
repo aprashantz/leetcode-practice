@@ -4,6 +4,7 @@ def remove_duplicates(data):
         if data[i] != data[p]:
             p += 1
             data[p] = data[i]
+        print(data)
     return len(data[0:p+1])
 
 
