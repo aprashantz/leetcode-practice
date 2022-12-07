@@ -1,1 +1,1 @@
-Contains python solution to LeetCode questions I solve
+Contains python and sql solution to LeetCode questions I solve
