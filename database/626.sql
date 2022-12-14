@@ -1,0 +1,11 @@
+/* 626 Exchange Seats */
+SELECT (
+    CASE
+    WHEN id % 2 != 0 AND counts != id THEN id + 1
+    WHEN id % 2 != 0 AND counts = id THEN id
+    ELSE id - 1
+    END
+    ) AS 'id',
+student
+FROM Seat, (SELECT COUNT(*) AS counts FROM Seat) AS seat_counts
+ORDER BY id;
