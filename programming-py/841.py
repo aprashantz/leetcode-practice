@@ -1,14 +1,14 @@
 def can_visit_all_rooms(rooms):
     keys_in_hand = rooms[0]
-    rooms_visited = {0}
+    rooms_unlocked = {0}
     while keys_in_hand:
         # popping to remove key from hand once we use that key
         room_to_unlock = keys_in_hand.pop()
-        if room_to_unlock not in rooms_visited:
-            rooms_visited.add(room_to_unlock)
+        if room_to_unlock not in rooms_unlocked:
+            rooms_unlocked.add(room_to_unlock)
             # now keeping the keys in hand that we find in newly unlocked room
             keys_in_hand += rooms[room_to_unlock]
-    return len(rooms_visited) == len(rooms)
+    return len(rooms_unlocked) == len(rooms)
 
 
 # test below
