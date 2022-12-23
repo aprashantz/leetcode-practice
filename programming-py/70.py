@@ -6,4 +6,4 @@ def climb_stairs(n):
 
 
 # test below
-print(climb_stairs(2))
+print(climb_stairs(4))
