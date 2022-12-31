@@ -1,4 +1,4 @@
-/* 178. Rank Scores */
+/* 178 Rank Scores */
 
 /* Without using DENSE_RANK() */
 SELECT s1.score,
