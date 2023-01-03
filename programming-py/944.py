@@ -5,10 +5,6 @@ def min_deletion_size(strs):
     """using default dict"""
     to_delete = 0
     column_values = defaultdict(str)
-    if len(strs) == 2:
-        if strs == sorted(strs):
-            return 0
-        return 1
     for i in range(len(strs[0])):
         for j in range(len(strs)):
             column_values[i] += strs[j][i]
