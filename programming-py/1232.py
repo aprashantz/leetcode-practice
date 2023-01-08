@@ -22,3 +22,4 @@ print(check_straight_line([[0, 0], [0, 1], [0, -1]]))
 print(check_straight_line([[1, 2], [2, 3], [3, 5]]))  # false
 print(check_straight_line([[0, 0], [0, 5], [5, 5], [5, 0]]))  # false
 print(check_straight_line([[1, 1], [2, 2], [2, 0]]))  # false
+print(check_straight_line([[1, 4], [1, 1], [2, 1], [2, 2]]))
