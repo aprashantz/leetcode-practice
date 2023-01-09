@@ -6,7 +6,5 @@ def two_sum(nums, target):
 
 
 # test below
-nums = [2, 7, 15, 11]
-target = 9
-s = two_sum(nums, target)
-print(s)
+# print(two_sum([2, 7, 15, 11], 9))
+print(two_sum([2, 7, 15, 11], 3))
